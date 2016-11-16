@@ -1,7 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.stage.missionmedicaltraining\.com [NC]
-RewriteRule ^(.*)$ http://stage.missionmedicaltraining.com/$1 [L,R=301]
-AuthUserFile /home/linten32/.htpasswds/public_html/stage/passwd
-AuthName "Stage"
-AuthType Basic
-require valid-user
