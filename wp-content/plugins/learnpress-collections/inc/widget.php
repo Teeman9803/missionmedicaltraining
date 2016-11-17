@@ -58,7 +58,7 @@ class LP_Collections_Widget extends WP_Widget {
 	 * @return mixed
 	 */
 	public function form( $instance ) {
-		$title  = !empty( $instance['title'] ) ? $instance['title'] : __( 'Collections', 'learnpress-collections' );
+		$title  = !empty( $instance['title'] ) ? $instance['title'] : __( 'Programs', 'learnpress-collections' );
 		$number = !empty( $instance['number'] ) ? $instance['number'] : '5';
 		?>
 		<p>

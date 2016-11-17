@@ -5464,3 +5464,13 @@ function wp_raise_memory_limit( $context = 'admin' ) {
 
 	return false;
 }
+
+function widget_content($content) {
+    if($content == '') {
+        $postid = get_the_ID();
+        $sidebar = get_post_meta($postid, 'program-description');
+        $content = $sidebar[0];
+    }
+    return $content;
+}
+add_filter( 'widget_text', 'widget_content', 99 );
