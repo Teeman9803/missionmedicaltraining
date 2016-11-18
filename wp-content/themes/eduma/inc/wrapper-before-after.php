@@ -90,7 +90,7 @@ if ( ! function_exists( 'thim_wrapper_loop_start' ) ) :
 		}
 		$class_col     = thim_wrapper_layout();
 		$sidebar_class = '';
-		if ( is_404() ) {
+		if ( is_404() || !is_single()) {
 			$class_col = 'col-sm-12 full-width';
 		}
 		if ( $class_col == "col-sm-9 alignleft" ) {
@@ -109,7 +109,7 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 	function thim_wrapper_loop_end() {
 		$class_col = thim_wrapper_layout();
 		$get_post_type = get_post_type();
-		if ( is_404() ) {
+		if ( is_404()) {
 			$class_col = 'col-sm-12 full-width';
 		}
 		echo '</main>';
@@ -121,7 +121,9 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 			} else if ( $get_post_type == "product" ) {
 				get_sidebar( 'shop' );
 			} else {
-				get_sidebar();
+			   if(is_single()) {
+				    get_sidebar();
+				}
 			}
 		}
 		echo '</div></div>';

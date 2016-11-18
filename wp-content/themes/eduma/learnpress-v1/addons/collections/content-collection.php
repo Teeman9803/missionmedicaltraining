@@ -10,7 +10,7 @@
 if ( !defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-$class = ' collection-item col-xs-4'
+$class = ' collection-item col-xs-3'
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
 
