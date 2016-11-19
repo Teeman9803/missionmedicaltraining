@@ -2,9 +2,9 @@
 	<?php if ( is_user_logged_in() ): ?>
 		<?php if ( thim_plugin_active( 'learnpress/learnpress.php' ) ) : ?>
 			<?php if ( thim_is_new_learnpress( '1.0' ) ) : ?>
-				<a class="profile" href="<?php echo esc_url( learn_press_user_profile_link() ); ?>"><?php esc_html_e( 'Profile', 'eduma' ); ?></a>
+				<a class="profile" href="<?php echo esc_url( learn_press_user_profile_link() ); ?>"><?php esc_html_e( 'My Account', 'eduma' ); ?></a>
 			<?php else: ?>
-				<a class="profile" href="<?php echo esc_url( apply_filters( 'learn_press_instructor_profile_link', '#', get_current_user_id(), '' ) ); ?>"><?php esc_html_e( 'Profile', 'eduma' ); ?></a>
+				<a class="profile" href="<?php echo esc_url( apply_filters( 'learn_press_instructor_profile_link', '#', get_current_user_id(), '' ) ); ?>"><?php esc_html_e( 'My Account', 'eduma' ); ?></a>
 			<?php endif; ?>
 		<?php endif; ?>
 
