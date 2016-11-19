@@ -585,7 +585,7 @@ if ( !function_exists( 'thim_related_courses' ) ) {
 		if ( $related_courses ) {
 			?>
 			<div class="thim-ralated-course">
-				<h3 class="related-title"><?php esc_html_e( 'You May Like', 'eduma' ); ?></h3>
+				<h3 class="related-title"><?php esc_html_e( 'Related Courses', 'eduma' ); ?></h3>
 
 				<div class="thim-course-grid">
 					<?php foreach ( $related_courses as $course_item ) : ?>
@@ -1198,7 +1198,7 @@ if ( !function_exists( 'thim_learnpress_breadcrumb' ) ) {
 
 		if ( is_single() ) {
 
-			$categories = get_the_terms( $post, 'course_category' );
+//			$categories = get_the_terms( $post, 'course_category' );
 
 			if ( get_post_type() == 'lp_course' ) {
 				// All courses

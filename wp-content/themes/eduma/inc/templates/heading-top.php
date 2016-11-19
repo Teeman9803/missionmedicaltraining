@@ -183,7 +183,7 @@ $c_css_overlay   = ( $cate_top_image_src != '' && $bg_color != '' ) ? '<span cla
 							$course_cat = get_the_terms( $postid, 'course_category' );
 							if ( !empty( $course_cat ) ) {
 								echo '<' . $typography . '>';
-								echo esc_html( $course_cat[0]->name );
+								echo esc_html( 'Courses', 'eduma');
 								echo '</' . $typography . '>';
 							}
 						}
