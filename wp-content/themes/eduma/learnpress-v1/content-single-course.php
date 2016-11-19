@@ -58,9 +58,9 @@ do_action( 'learn_press_before_single_course' ); ?>
 	<div class="course-meta">
 		<?php learn_press_course_instructor(); ?>
 		<?php learn_press_course_categories(); ?>
-		<?php thim_course_forum_link(); ?>
+<!--		<?php thim_course_forum_link(); ?>
 		<?php thim_course_ratings(); ?>
-		<?php learn_press_course_progress(); ?>
+		<?php learn_press_course_progress(); ?> -->
 	</div>
 
 	<div class="course-payment">

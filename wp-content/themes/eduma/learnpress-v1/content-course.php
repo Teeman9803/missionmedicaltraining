@@ -27,9 +27,9 @@ $class .= ' lpr_course';
 			?>
 			<div class="course-meta">
 				<?php learn_press_course_instructor(); ?>
-				<?php thim_course_ratings(); ?>
+				<!-- <?php thim_course_ratings(); ?> -->
 				<?php learn_press_course_students(); ?>
-				<?php thim_course_ratings_count(); ?>
+				<!-- <?php thim_course_ratings_count(); ?> -->
 				<?php learn_press_course_price(); ?>
 			</div>
 			<div class="course-description">

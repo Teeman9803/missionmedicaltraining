@@ -7,7 +7,8 @@ if ( !defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-$review_is_enable = thim_plugin_active( 'learnpress-course-review/learnpress-course-review.php' );
+//$review_is_enable = thim_plugin_active( 'learnpress-course-review/learnpress-course-review.php' );
+$review_is_enable = 0;
 
 ?>
 
@@ -34,12 +35,12 @@ $review_is_enable = thim_plugin_active( 'learnpress-course-review/learnpress-cou
 					<span><?php esc_html_e( 'Curriculum', 'eduma' ); ?></span>
 				</a>
 			</li>
-			<li role="presentation">
+			<!-- <li role="presentation">
 				<a href="#tab-course-instructor" data-toggle="tab">
 					<i class="fa fa-user"></i>
 					<span><?php esc_html_e( 'Instructors', 'eduma' ); ?></span>
 				</a>
-			</li>
+			</li> -->
 			<?php if ( $review_is_enable ) : ?>
 				<li role="presentation">
 					<a href="#tab-course-review" data-toggle="tab">
