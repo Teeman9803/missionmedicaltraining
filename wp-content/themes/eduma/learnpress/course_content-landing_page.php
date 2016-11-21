@@ -3,7 +3,8 @@
 if ( !defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-$review_is_enable = thim_plugin_active( 'learnpress-course-review/learnpress-course-review.php' );
+//$review_is_enable = thim_plugin_active( 'learnpress-course-review/learnpress-course-review.php' );
+$review_is_enable = 0;
 
 ?>
 <?php do_action( 'learn_press_before_course_landing_content' ); ?>
