@@ -279,14 +279,14 @@ if ( !function_exists( 'thim_course_ratings' ) ) {
 		$course_rate = learn_press_get_course_rate( $course_id );
 		$ratings     = learn_press_get_course_rate_total( $course_id );
 		?>
-		<div class="course-review">
+<!--		<div class="course-review">
 			<label><?php esc_html_e( 'Review', 'eduma' ); ?></label>
 
 			<div class="value">
 				<?php thim_print_rating( $course_rate ); ?>
 				<span><?php $ratings ? printf( _n( '(%1$s review)', '(%1$s reviews)', $ratings, 'eduma' ), number_format_i18n( $ratings ) ) : esc_html_e( '(0 review)', 'eduma' ); ?></span>
 			</div>
-		</div>
+		</div> -->
 		<?php
 	}
 }
