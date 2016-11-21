@@ -36,21 +36,24 @@ class Thim_Custom_WC_Widget_Cart extends WC_Widget_Cart {
 
 
 		$hide_if_empty = empty( $instance['hide_if_empty'] ) ? 0 : 1;
-		echo '<div class="minicart_hover" id="header-mini-cart">';
-		list( $cart_items ) = thim_get_current_cart_info();
-		echo '<span class="cart-items-number"><i class="fa fa-fw fa-shopping-cart"></i><span class="wrapper-items-number"><span class="items-number">' . $cart_items . '</span></span></span>';
-
-		echo '<div class="clear"></div>';
-		echo '</div>';
-		if ( $hide_if_empty ) {
-			echo '<div class="hide_cart_widget_if_empty">';
-		}
-		// Insert cart widget placeholder - code in woocommerce.js will update this on page load
-		echo '<div class="widget_shopping_cart_content" style="display: none;"></div>';
-		if ( $hide_if_empty ) {
-			echo '</div>';
-		}
- 		echo ent2ncr($after_widget);
+            if(is_user_logged_in()) {
+                echo '<div class="minicart_hover" id="header-mini-cart">';
+                list( $cart_items ) = thim_get_current_cart_info();
+                if($cart_items > 0) {
+                    echo '<a href="' . get_site_url() . '/cart" title="Go to Cart" style="text-decoration: none"><span class="cart-items-number"><i class="fa fa-fw fa-shopping-cart"></i><span class="wrapper-items-number"><span class="items-number">' . $cart_items . '</span></span></span></a>';
+                }
+                echo '<div class="clear"></div>';
+                echo '</div>';
+                if ( $hide_if_empty ) {
+                    echo '<div class="hide_cart_widget_if_empty">';
+                }
+                // Insert cart widget placeholder - code in woocommerce.js will update this on page load
+        //		echo '<div class="widget_shopping_cart_content" style="display: none;"></div>';
+                if ( $hide_if_empty ) {
+                    echo '</div>';
+                }
+                echo ent2ncr($after_widget);
+            }
 	}
 
 }

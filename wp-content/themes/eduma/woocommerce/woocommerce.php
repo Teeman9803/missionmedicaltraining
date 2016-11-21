@@ -92,7 +92,12 @@ add_action( 'woocommerce_share', 'thim_social_share' );
 /* custom WC_Widget_Cart */
 function thim_get_current_cart_info() {
 	global $woocommerce;
-	$items = count( $woocommerce->cart->get_cart() );
+	if(LP()->cart) {
+	// Quick Patch to fix shopping cart count. Need to find the real issue
+	    $items = count( LP()->cart->get_items() );
+	} else {
+	    $items = count( $woocommerce->cart->get_cart() );
+	}
 
 	return array(
 		$items,
