@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e13b439-c3fd-44b5-b9b2-d6d40e39d2ec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eduma/assets/css/custom-style.css" afterPath="$PROJECT_DIR$/wp-content/themes/eduma/assets/css/custom-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eduma/assets/less/mini-cart.less" afterPath="$PROJECT_DIR$/wp-content/themes/eduma/assets/less/mini-cart.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/widgets/class-wc-widget-cart.php" afterPath="$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/widgets/class-wc-widget-cart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/woocommerce.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/learn-press-logs/query-97773ee9596c4eabcce5024e72677ca3.log" afterPath="$PROJECT_DIR$/wp-content/uploads/learn-press-logs/query-97773ee9596c4eabcce5024e72677ca3.log" />
     </list>
     <ignored path="mmti-dev.iws" />
@@ -53,8 +49,8 @@
           <file leaf-file-name="class-wc-widget-cart.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/widgets/class-wc-widget-cart.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+                <state relative-caret-position="285">
+                  <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -77,8 +73,8 @@
           <file leaf-file-name="woocommerce.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/woocommerce.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+                <state relative-caret-position="345">
+                  <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -534,7 +530,7 @@
       <workItem from="1479644217726" duration="1834000" />
       <workItem from="1479682359783" duration="2178000" />
       <workItem from="1479690486236" duration="1314000" />
-      <workItem from="1479723895098" duration="12424000" />
+      <workItem from="1479723895098" duration="12765000" />
     </task>
     <task id="LOCAL-00001" summary="updated breadcrumbs">
       <created>1479292026529</created>
@@ -554,7 +550,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28460000" />
+    <option name="totallyTimeSpent" value="28801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1646" y="23" width="1645" height="1053" extended-state="0" />
@@ -980,16 +976,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/woocommerce.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+        <state relative-caret-position="345">
+          <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eduma/woocommerce/widgets/class-wc-widget-cart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="285">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
           <folding />
         </state>
       </provider>

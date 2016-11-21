@@ -1,4 +1,4 @@
------11-21-2016 @ 16:18:10 ------
+-----11-21-2016 @ 16:24:24 ------
 Array
 (
     [0] => Array
@@ -9,379 +9,379 @@ Array
 
     [1] => Array
         (
-            [0] => SELECT post_id FROM wp_postmeta WHERE meta_key = '_wp_attached_file' AND meta_value = 'http://localhost:8888/wordpress/wp-content/uploads/revslider/home-page-video/bg-video.jpg'
-            [1] => 4
+            [0] => SELECT tr.object_id FROM wp_term_relationships AS tr INNER JOIN wp_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('54') ORDER BY tr.object_id ASC
+            [1] => 2
         )
 
     [2] => Array
         (
-            [0] => select * from wp_revslider_static_slides where slider_id = '4'
+            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND (wp_posts.ID = '1698') AND wp_posts.post_type = 'page' ORDER BY wp_posts.post_date DESC 
             [1] => 2
         )
 
     [3] => Array
         (
-            [0] => select * from wp_revslider_layer_animations
+            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (7776,7777,7778,7780,7832,7840,7841,7842,7843,7844,7845,7846) AND wp_posts.post_type = 'nav_menu_item' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.menu_order ASC 
             [1] => 2
         )
 
     [4] => Array
         (
-            [0] => SELECT * FROM wp_revslider_navigations
+            [0] =>  SELECT t1.term_id, t2.name FROM wp_term_taxonomy AS t1 INNER JOIN wp_terms AS t2 ON t1.term_id = t2.term_id WHERE t1.taxonomy = 'our_team_category' AND t1.count > 0 
             [1] => 2
         )
 
     [5] => Array
         (
-            [0] =>  SELECT t1.term_id, t2.name FROM wp_term_taxonomy AS t1 INNER JOIN wp_terms AS t2 ON t1.term_id = t2.term_id WHERE t1.taxonomy = 'our_team_category' AND t1.count > 0 
-            [1] => 2
+            [0] => SELECT * FROM wp_posts WHERE (post_type = 'page' AND post_status = 'publish') AND post_parent = 1698 ORDER BY wp_posts.post_title ASC LIMIT 0,1
+            [1] => 1
         )
 
     [6] => Array
-        (
-            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (7776,7777,7778,7780,7832,7840,7841,7842,7843,7844,7845,7846) AND wp_posts.post_type = 'nav_menu_item' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.menu_order ASC 
-            [1] => 2
-        )
-
-    [7] => Array
-        (
-            [0] => select * from wp_revslider_slides where slider_id = '4' order by slide_order
-            [1] => 2
-        )
-
-    [8] => Array
-        (
-            [0] => SELECT tr.object_id FROM wp_term_relationships AS tr INNER JOIN wp_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('54') ORDER BY tr.object_id ASC
-            [1] => 2
-        )
-
-    [9] => Array
-        (
-            [0] => select * from wp_revslider_css
-            [1] => 1
-        )
-
-    [10] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7785) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [11] => Array
         (
             [0] => SELECT option_value FROM wp_options WHERE option_name = 'can_compress_scripts' LIMIT 1
             [1] => 1
         )
 
-    [12] => Array
+    [7] => Array
         (
-            [0] => SELECT * FROM wp_posts WHERE ID = 85 LIMIT 1
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7785) ORDER BY meta_id ASC
             [1] => 1
         )
 
-    [13] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'revslider-nav-preset-default' LIMIT 1
-            [1] => 1
-        )
-
-    [14] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (85) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [15] => Array
-        (
-            [0] => SELECT SQL_CALC_FOUND_ROWS wp_posts.ID FROM wp_posts WHERE 1=1 AND wp_posts.post_type = 'post' AND (wp_posts.post_status = 'publish' OR wp_posts.post_status = 'closed' OR wp_posts.post_status = 'tp-event-upcoming' OR wp_posts.post_status = 'tp-event-happenning' OR wp_posts.post_status = 'tp-event-expired' OR wp_posts.post_status = 'private' OR wp_posts.post_status = 'hidden') ORDER BY wp_posts.post_date DESC LIMIT 0, 4
-            [1] => 1
-        )
-
-    [16] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE ID = 7785 LIMIT 1
-            [1] => 1
-        )
-
-    [17] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 9
-            [1] => 1
-        )
-
-    [18] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE ID = 79 LIMIT 1
-            [1] => 1
-        )
-
-    [19] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE (post_type = 'page' AND post_status = 'publish') AND post_parent = 7650 ORDER BY wp_posts.post_title ASC LIMIT 0,1
-            [1] => 1
-        )
-
-    [20] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE ID = 2958 LIMIT 1
-            [1] => 1
-        )
-
-    [21] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'mo_share_options_enable_home_page' LIMIT 1
-            [1] => 1
-        )
-
-    [22] => Array
+    [8] => Array
         (
             [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (2901,125,87,12) ORDER BY meta_id ASC
             [1] => 1
         )
 
-    [23] => Array
+    [9] => Array
+        (
+            [0] => SELECT * FROM wp_posts WHERE ID = 2958 LIMIT 1
+            [1] => 1
+        )
+
+    [10] => Array
         (
             [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (12,2901,87,125) AND wp_posts.post_type = 'page' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.post_date DESC 
             [1] => 1
         )
 
-    [24] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7780,7776,7832,7841,7842,7840,7843,7844,7845,7846,7778,7777) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [25] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'mo_share_options_enable_static_pages' LIMIT 1
-            [1] => 1
-        )
-
-    [26] => Array
-        (
-            [0] => select * from wp_revslider_sliders where alias = 'home-page-video' AND `type` != 'template'
-            [1] => 1
-        )
-
-    [27] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE ID = 7783 LIMIT 1
-            [1] => 1
-        )
-
-    [28] => Array
+    [11] => Array
         (
             [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 54
             [1] => 1
         )
 
-    [29] => Array
+    [12] => Array
         (
-            [0] => SELECT FOUND_ROWS()
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7780,7776,7832,7841,7842,7840,7843,7844,7845,7846,7778,7777) ORDER BY meta_id ASC
             [1] => 1
         )
 
-    [30] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7783) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [31] => Array
-        (
-            [0] => SELECT wp_posts.* FROM wp_posts WHERE ID IN (1,3696,3697,3698)
-            [1] => 1
-        )
-
-    [32] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.slug = '50' AND tt.taxonomy = 'nav_menu' LIMIT 1
-            [1] => 1
-        )
-
-    [33] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.name = '50' AND tt.taxonomy = 'nav_menu' LIMIT 1
-            [1] => 1
-        )
-
-    [34] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 50
-            [1] => 1
-        )
-
-    [35] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (4526,91) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [36] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7502,7694,7685) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [37] => Array
-        (
-            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (4526,91) AND wp_posts.post_type = 'page' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.post_date DESC 
-            [1] => 1
-        )
-
-    [38] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 49
-            [1] => 1
-        )
-
-    [39] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.slug = '49' AND tt.taxonomy = 'nav_menu' LIMIT 1
-            [1] => 1
-        )
-
-    [40] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_content_types' LIMIT 1
-            [1] => 1
-        )
-
-    [41] => Array
-        (
-            [0] => select * from wp_revslider_sliders where `type` != 'template' OR `type` IS NULL order by id ASC
-            [1] => 1
-        )
-
-    [42] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_site_transient_update_core' LIMIT 1
-            [1] => 1
-        )
-
-    [43] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_site_transient_update_themes' LIMIT 1
-            [1] => 1
-        )
-
-    [44] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.name = '49' AND tt.taxonomy = 'nav_menu' LIMIT 1
-            [1] => 1
-        )
-
-    [45] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_site_transient_update_plugins' LIMIT 1
-            [1] => 1
-        )
-
-    [46] => Array
-        (
-            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (7502,7685,7694) AND wp_posts.post_type = 'nav_menu_item' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.menu_order ASC 
-            [1] => 1
-        )
-
-    [47] => Array
-        (
-            [0] => SELECT tr.object_id FROM wp_term_relationships AS tr INNER JOIN wp_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('46') ORDER BY tr.object_id ASC
-            [1] => 1
-        )
-
-    [48] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (10) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [49] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON tt.term_id = t.term_id INNER JOIN wp_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('post_format') AND tr.object_id IN (7650) ORDER BY t.name ASC
-            [1] => 1
-        )
-
-    [50] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE ID = 10 LIMIT 1
-            [1] => 1
-        )
-
-    [51] => Array
-        (
-            [0] => SELECT p.ID FROM wp_posts AS p INNER JOIN wp_postmeta AS pm ON p.ID = pm.post_id WHERE pm.meta_key = '_wp_attached_file' AND pm.meta_value LIKE '%demo_image.jpg'
-            [1] => 1
-        )
-
-    [52] => Array
-        (
-            [0] => SELECT t.*, tt.*, tr.object_id FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON tt.term_id = t.term_id INNER JOIN wp_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('category', 'post_tag', 'post_format') AND tr.object_id IN (1, 3696, 3697, 3698) ORDER BY t.name ASC
-            [1] => 1
-        )
-
-    [53] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (1,3696,3697,3698) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [54] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 45
-            [1] => 1
-        )
-
-    [55] => Array
-        (
-            [0] => SELECT tr.object_id FROM wp_term_relationships AS tr INNER JOIN wp_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('45') ORDER BY tr.object_id ASC
-            [1] => 1
-        )
-
-    [56] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (2780) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [57] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 46
-            [1] => 1
-        )
-
-    [58] => Array
-        (
-            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (2901,125,87,87,2780) AND wp_posts.post_type = 'page' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.post_date DESC 
-            [1] => 1
-        )
-
-    [59] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7757,7760,7758,7612,7759) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [60] => Array
-        (
-            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (7612,7757,7758,7759,7760) AND wp_posts.post_type = 'nav_menu_item' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.menu_order ASC 
-            [1] => 1
-        )
-
-    [61] => Array
+    [13] => Array
         (
             [0] => SELECT * FROM wp_posts WHERE ID = 2848 LIMIT 1
             [1] => 1
         )
 
-    [62] => Array
+    [14] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'woocommerce_lock_down_admin' LIMIT 1
+            [1] => 1
+        )
+
+    [15] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_allow_search' LIMIT 1
+            [1] => 1
+        )
+
+    [16] => Array
+        (
+            [0] =>  SELECT SQL_CALC_FOUND_ROWS u.*, c.comment_ID as comment_id, cm1.meta_value as title, c.comment_content as content, cm2.meta_value as rate FROM wp_posts p INNER JOIN wp_comments c ON p.ID = c.comment_post_ID INNER JOIN wp_users u ON u.ID = c.user_id INNER JOIN wp_commentmeta cm1 ON cm1.comment_id = c.comment_ID AND cm1.meta_key='_lpr_review_title' INNER JOIN wp_commentmeta cm2 ON cm2.comment_id = c.comment_ID AND cm2.meta_key='_lpr_rating' WHERE p.ID=1698 AND c.comment_type='review' ORDER BY c.comment_date DESC LIMIT 0, 5 
+            [1] => 1
+        )
+
+    [17] => Array
+        (
+            [0] => SELECT * FROM wp_posts WHERE ID = 7526 LIMIT 1
+            [1] => 1
+        )
+
+    [18] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_learn_press_install' LIMIT 1
+            [1] => 1
+        )
+
+    [19] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_use_wp_editor' LIMIT 1
+            [1] => 1
+        )
+
+    [20] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'revslider-static-css' LIMIT 1
+            [1] => 1
+        )
+
+    [21] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpseo_internallinks' LIMIT 1
+            [1] => 1
+        )
+
+    [22] => Array
+        (
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7782) ORDER BY meta_id ASC
+            [1] => 1
+        )
+
+    [23] => Array
         (
             [0] => SELECT * FROM wp_posts WHERE ID = 7782 LIMIT 1
             [1] => 1
         )
 
-    [63] => Array
+    [24] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'titan-framework-thim-css' LIMIT 1
+            [1] => 1
+        )
+
+    [25] => Array
+        (
+            [0] => SELECT * FROM wp_posts WHERE ID = 7785 LIMIT 1
+            [1] => 1
+        )
+
+    [26] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON tt.term_id = t.term_id INNER JOIN wp_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('category') AND tr.object_id IN (1698) ORDER BY t.name ASC
+            [1] => 1
+        )
+
+    [27] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.name = '50' AND tt.taxonomy = 'nav_menu' LIMIT 1
+            [1] => 1
+        )
+
+    [28] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 49
+            [1] => 1
+        )
+
+    [29] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.slug = '50' AND tt.taxonomy = 'nav_menu' LIMIT 1
+            [1] => 1
+        )
+
+    [30] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 50
+            [1] => 1
+        )
+
+    [31] => Array
+        (
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (4526,91) ORDER BY meta_id ASC
+            [1] => 1
+        )
+
+    [32] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.slug = '49' AND tt.taxonomy = 'nav_menu' LIMIT 1
+            [1] => 1
+        )
+
+    [33] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.name = '49' AND tt.taxonomy = 'nav_menu' LIMIT 1
+            [1] => 1
+        )
+
+    [34] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_content_types' LIMIT 1
+            [1] => 1
+        )
+
+    [35] => Array
+        (
+            [0] => select * from wp_revslider_sliders where `type` != 'template' OR `type` IS NULL order by id ASC
+            [1] => 1
+        )
+
+    [36] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_site_transient_update_core' LIMIT 1
+            [1] => 1
+        )
+
+    [37] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_site_transient_update_themes' LIMIT 1
+            [1] => 1
+        )
+
+    [38] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_site_transient_update_plugins' LIMIT 1
+            [1] => 1
+        )
+
+    [39] => Array
+        (
+            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (4526,91) AND wp_posts.post_type = 'page' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.post_date DESC 
+            [1] => 1
+        )
+
+    [40] => Array
+        (
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7502,7694,7685) ORDER BY meta_id ASC
+            [1] => 1
+        )
+
+    [41] => Array
+        (
+            [0] => SELECT tr.object_id FROM wp_term_relationships AS tr INNER JOIN wp_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('45') ORDER BY tr.object_id ASC
+            [1] => 1
+        )
+
+    [42] => Array
+        (
+            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (7612,7757,7758,7759,7760) AND wp_posts.post_type = 'nav_menu_item' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.menu_order ASC 
+            [1] => 1
+        )
+
+    [43] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 45
+            [1] => 1
+        )
+
+    [44] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON tt.term_id = t.term_id INNER JOIN wp_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('post_format') AND tr.object_id IN (1698) ORDER BY t.name ASC
+            [1] => 1
+        )
+
+    [45] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'mo_share_options_enable_static_pages' LIMIT 1
+            [1] => 1
+        )
+
+    [46] => Array
+        (
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7757,7760,7758,7612,7759) ORDER BY meta_id ASC
+            [1] => 1
+        )
+
+    [47] => Array
+        (
+            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (2901,125,87,87,2780) AND wp_posts.post_type = 'page' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.post_date DESC 
+            [1] => 1
+        )
+
+    [48] => Array
+        (
+            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID IN (7502,7685,7694) AND wp_posts.post_type = 'nav_menu_item' AND ((wp_posts.post_status = 'publish')) ORDER BY wp_posts.menu_order ASC 
+            [1] => 1
+        )
+
+    [49] => Array
+        (
+            [0] => SELECT tr.object_id FROM wp_term_relationships AS tr INNER JOIN wp_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('46') ORDER BY tr.object_id ASC
+            [1] => 1
+        )
+
+    [50] => Array
+        (
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE t.term_id = 46
+            [1] => 1
+        )
+
+    [51] => Array
+        (
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (2780) ORDER BY meta_id ASC
+            [1] => 1
+        )
+
+    [52] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_timeout_learn_press_install' LIMIT 1
+            [1] => 1
+        )
+
+    [53] => Array
+        (
+            [0] => SELECT * FROM wp_posts WHERE ID = 2778 LIMIT 1
+            [1] => 1
+        )
+
+    [54] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_topic_slug' LIMIT 1
+            [1] => 1
+        )
+
+    [55] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_show_on_root' LIMIT 1
+            [1] => 1
+        )
+
+    [56] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_forum_slug' LIMIT 1
+            [1] => 1
+        )
+
+    [57] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_include_root' LIMIT 1
+            [1] => 1
+        )
+
+    [58] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_root_slug' LIMIT 1
+            [1] => 1
+        )
+
+    [59] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_topic_archive_slug' LIMIT 1
+            [1] => 1
+        )
+
+    [60] => Array
         (
             [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_reply_slug' LIMIT 1
+            [1] => 1
+        )
+
+    [61] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_user_slug' LIMIT 1
+            [1] => 1
+        )
+
+    [62] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_use_autoembed' LIMIT 1
+            [1] => 1
+        )
+
+    [63] => Array
+        (
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_allow_topic_tags' LIMIT 1
             [1] => 1
         )
 
@@ -393,349 +393,235 @@ Array
 
     [65] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_topic_archive_slug' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'thim_options' LIMIT 1
             [1] => 1
         )
 
     [66] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_show_on_root' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'woocommerce_status_options' LIMIT 1
             [1] => 1
         )
 
     [67] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_forum_slug' LIMIT 1
+            [0] => show tables like 'wp_revslider_slides'
             [1] => 1
         )
 
     [68] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_topic_slug' LIMIT 1
+            [0] => show tables like 'wp_revslider_static_slides'
             [1] => 1
         )
 
     [69] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_allow_topic_tags' LIMIT 1
+            [0] => show tables like 'wp_revslider_sliders'
             [1] => 1
         )
 
     [70] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_use_autoembed' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'revslider_change_database' LIMIT 1
             [1] => 1
         )
 
     [71] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_user_favs_slug' LIMIT 1
+            [0] => SELECT user_id, meta_key, meta_value FROM wp_usermeta WHERE user_id IN (1) ORDER BY umeta_id ASC
             [1] => 1
         )
 
     [72] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_user_subs_slug' LIMIT 1
+            [0] => show tables like 'wp_revslider_css'
             [1] => 1
         )
 
     [73] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_reply_archive_slug' LIMIT 1
+            [0] => show tables like 'wp_revslider_layer_animations'
             [1] => 1
         )
 
     [74] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_search_slug' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_theme_package_id' LIMIT 1
             [1] => 1
         )
 
     [75] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_user_slug' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'mc4wp_integrations' LIMIT 1
             [1] => 1
         )
 
     [76] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_view_slug' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'siteorigin_panels_is_using_bundled' LIMIT 1
             [1] => 1
         )
 
     [77] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_include_root' LIMIT 1
+            [0] => show tables like 'wp_revslider_navigations'
             [1] => 1
         )
 
     [78] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_root_slug' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_view_slug' LIMIT 1
             [1] => 1
         )
 
     [79] => Array
         (
-            [0] => show tables like 'wp_revslider_static_slides'
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_search_slug' LIMIT 1
             [1] => 1
         )
 
     [80] => Array
         (
-            [0] => show tables like 'wp_revslider_css'
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (1698) ORDER BY meta_id ASC
             [1] => 1
         )
 
     [81] => Array
         (
-            [0] => show tables like 'wp_revslider_slides'
+            [0] => SELECT * FROM wp_posts WHERE ID = -1 LIMIT 1
             [1] => 1
         )
 
     [82] => Array
         (
-            [0] => show tables like 'wp_revslider_sliders'
+            [0] => SELECT * FROM wp_posts WHERE ID = 1698 LIMIT 1
             [1] => 1
         )
 
     [83] => Array
         (
-            [0] => SELECT user_id, meta_key, meta_value FROM wp_usermeta WHERE user_id IN (1) ORDER BY umeta_id ASC
+            [0] =>  SELECT ID, post_name, post_parent, post_type FROM wp_posts WHERE post_name IN ('cart') AND post_type IN ('page','attachment') 
             [1] => 1
         )
 
     [84] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'revslider_change_database' LIMIT 1
+            [0] => SELECT term_id, meta_key, meta_value FROM wp_termmeta WHERE term_id IN (16,17,31) ORDER BY meta_id ASC
             [1] => 1
         )
 
     [85] => Array
         (
-            [0] => show tables like 'wp_revslider_layer_animations'
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_less_version' LIMIT 1
             [1] => 1
         )
 
     [86] => Array
         (
-            [0] => show tables like 'wp_revslider_navigations'
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_use_custom' LIMIT 1
             [1] => 1
         )
 
     [87] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'woocommerce_status_options' LIMIT 1
+            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (5345) ORDER BY meta_id ASC
             [1] => 1
         )
 
     [88] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'thim_options' LIMIT 1
+            [0] => SELECT * FROM wp_users WHERE user_login = 'linten32'
             [1] => 1
         )
 
     [89] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_theme_package_id' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'vc_automapped_shortcodes' LIMIT 1
             [1] => 1
         )
 
     [90] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'mc4wp_integrations' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_groups_access_rules' LIMIT 1
             [1] => 1
         )
 
     [91] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'siteorigin_panels_is_using_bundled' LIMIT 1
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') AND tt.parent = '0' ORDER BY t.name ASC 
             [1] => 1
         )
 
     [92] => Array
         (
-            [0] => SELECT session_value FROM wp_woocommerce_sessions WHERE session_key = '1'
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('category') ORDER BY t.name ASC 
             [1] => 1
         )
 
     [93] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_timeout_external_ip_address_::1' LIMIT 1
+            [0] => SELECT session_value FROM wp_woocommerce_sessions WHERE session_key = '1'
             [1] => 1
         )
 
     [94] => Array
         (
-            [0] => SELECT * FROM wp_posts WHERE ID = 7526 LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_user_subs_slug' LIMIT 1
             [1] => 1
         )
 
     [95] => Array
         (
-            [0] => SELECT wp_posts.* FROM wp_posts WHERE 1=1 AND wp_posts.ID = 7650 AND wp_posts.post_type = 'page' ORDER BY wp_posts.post_date DESC 
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_user_favs_slug' LIMIT 1
             [1] => 1
         )
 
     [96] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_learn_press_install' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_reply_archive_slug' LIMIT 1
             [1] => 1
         )
 
     [97] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_timeout_learn_press_install' LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_timeout_external_ip_address_::1' LIMIT 1
             [1] => 1
         )
 
     [98] => Array
         (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (5345) ORDER BY meta_id ASC
+            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_external_ip_address_::1' LIMIT 1
             [1] => 1
         )
 
     [99] => Array
         (
-            [0] => SELECT * FROM wp_posts WHERE ID = 5345 LIMIT 1
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'large_crop' LIMIT 1
             [1] => 1
         )
 
     [100] => Array
         (
-            [0] =>  SELECT SQL_CALC_FOUND_ROWS u.*, c.comment_ID as comment_id, cm1.meta_value as title, c.comment_content as content, cm2.meta_value as rate FROM wp_posts p INNER JOIN wp_comments c ON p.ID = c.comment_post_ID INNER JOIN wp_users u ON u.ID = c.user_id INNER JOIN wp_commentmeta cm1 ON cm1.comment_id = c.comment_ID AND cm1.meta_key='_lpr_review_title' INNER JOIN wp_commentmeta cm2 ON cm2.comment_id = c.comment_ID AND cm2.meta_key='_lpr_rating' WHERE p.ID=7650 AND c.comment_type='review' ORDER BY c.comment_date DESC LIMIT 0, 5 
+            [0] => SELECT option_value FROM wp_options WHERE option_name = 'medium_crop' LIMIT 1
             [1] => 1
         )
 
     [101] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'woocommerce_lock_down_admin' LIMIT 1
+            [0] => SELECT term_id, meta_key, meta_value FROM wp_termmeta WHERE term_id IN (1,6,7,8) ORDER BY meta_id ASC
             [1] => 1
         )
 
     [102] => Array
         (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'titan-framework-thim-css' LIMIT 1
+            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('category') AND tt.parent = '0' ORDER BY t.term_id ASC 
             [1] => 1
         )
 
     [103] => Array
         (
-            [0] => SELECT * FROM wp_users WHERE user_login = 'linten32'
-            [1] => 1
-        )
-
-    [104] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'revslider-static-css' LIMIT 1
-            [1] => 1
-        )
-
-    [105] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_use_wp_editor' LIMIT 1
-            [1] => 1
-        )
-
-    [106] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_bbp_allow_search' LIMIT 1
-            [1] => 1
-        )
-
-    [107] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE ID = 2778 LIMIT 1
-            [1] => 1
-        )
-
-    [108] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'vc_automapped_shortcodes' LIMIT 1
-            [1] => 1
-        )
-
-    [109] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'large_crop' LIMIT 1
-            [1] => 1
-        )
-
-    [110] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('category') ORDER BY t.name ASC 
-            [1] => 1
-        )
-
-    [111] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'medium_crop' LIMIT 1
-            [1] => 1
-        )
-
-    [112] => Array
-        (
-            [0] => SELECT term_id, meta_key, meta_value FROM wp_termmeta WHERE term_id IN (1,6,7,8) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [113] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = '_transient_external_ip_address_::1' LIMIT 1
-            [1] => 1
-        )
-
-    [114] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('category') AND tt.parent = '0' ORDER BY t.term_id ASC 
-            [1] => 1
-        )
-
-    [115] => Array
-        (
-            [0] => SELECT t.*, tt.* FROM wp_terms AS t INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') AND tt.parent = '0' ORDER BY t.name ASC 
-            [1] => 1
-        )
-
-    [116] => Array
-        (
-            [0] => SELECT term_id, meta_key, meta_value FROM wp_termmeta WHERE term_id IN (16,17,31) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [117] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_use_custom' LIMIT 1
-            [1] => 1
-        )
-
-    [118] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_groups_access_rules' LIMIT 1
-            [1] => 1
-        )
-
-    [119] => Array
-        (
-            [0] => SELECT option_value FROM wp_options WHERE option_name = 'wpb_js_less_version' LIMIT 1
-            [1] => 1
-        )
-
-    [120] => Array
-        (
-            [0] => SELECT * FROM wp_posts WHERE ID = -1 LIMIT 1
-            [1] => 1
-        )
-
-    [121] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7650) ORDER BY meta_id ASC
-            [1] => 1
-        )
-
-    [122] => Array
-        (
-            [0] => SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (7782) ORDER BY meta_id ASC
+            [0] => SELECT * FROM wp_posts WHERE ID = 5345 LIMIT 1
             [1] => 1
         )
 
