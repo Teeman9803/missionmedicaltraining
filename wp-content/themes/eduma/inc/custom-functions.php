@@ -69,7 +69,8 @@ if ( !function_exists( 'thim_breadcrumbs' ) ) {
 			}
 			// Single post (Only display the first category)
 			if ( isset( $categories[0] ) ) {
-				echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' .  get_site_url()  . '/blog" title="' . esc_attr( $categories[0]->cat_name ) . '"><span itemprop="name">' . esc_html__( 'Blog', 'eduma' ) . '</span></a></li>';
+			// Updated to fix for blog entries - need better fix
+				echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' .  get_site_url()  . '/blog" title="Blog"><span itemprop="name">' . esc_html__( 'Blog', 'eduma' ) . '</span></a></li>';
 			}
 			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_title() ) . '">' . esc_html( get_the_title() ) . '</span></li>';
 
