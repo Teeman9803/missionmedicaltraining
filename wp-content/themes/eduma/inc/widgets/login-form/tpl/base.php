@@ -181,7 +181,7 @@ if ( is_user_logged_in() ) {
 	<?php
 	$registration_enabled = get_option( 'users_can_register' );
 	if ( $registration_enabled ) {
-		echo '<p class="link-bottom">' . esc_html__( 'Not a member yet? ', 'eduma' ) . '<a href="' . esc_url( thim_get_register_url() ) . '">' . esc_html__( 'Register now', 'eduma' ) . '</a></p>';
+		echo '<p class="link-bottom">' . esc_html__( 'Not a member yet? ', 'eduma' ) . '<a href="' . esc_url( thim_get_register_url() ) . '">' . esc_html__( 'Create an account', 'eduma' ) . '</a></p>';
 	}
 	?>
 </div>
