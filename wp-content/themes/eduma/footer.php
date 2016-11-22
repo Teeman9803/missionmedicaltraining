@@ -23,7 +23,7 @@ $class_footer = is_active_sidebar( 'footer_bottom' ) ? 'site-footer has-footer-b
 						if ( isset( $theme_options_data['thim_copyright_text'] ) ) {
 							echo '<div class="col-sm-6"><p class="text-copyright">' . $theme_options_data['thim_copyright_text'] . '</p></div>';
 						} else {
-							echo '<a href="' . esc_url( 'https://themeforest.net/item/education-wordpress-theme-education-wp/14058034?ref=ThimPress&utm_source=demo&utm_medium=demofooter' ) . '" target="_blank">Education WordPress Theme</a> by <a href="' . esc_url( 'http://www.thimpress.com' ) . '" target="_blank">ThimPress.</a> Powered by WordPress.';
+							echo '<a href="' . esc_url( 'https://www.terrallewis.me' ) . '" target="_blank">Site developed by</a> by <a href="' . esc_url( 'http://www.terrallewis.me' ) . '" target="_blank">TLDesigns.</a> Powered by WordPress.';
 						}
 						if ( is_active_sidebar( 'copyright' ) ) : ?>
 							<div class="col-sm-6 text-right">
