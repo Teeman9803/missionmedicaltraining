@@ -39,7 +39,7 @@ class Thim_Custom_WC_Widget_Cart extends WC_Widget_Cart {
             list( $cart_items ) = thim_get_current_cart_info();
             if(is_user_logged_in() && $cart_items > 0 ) {
                 echo '<div class="minicart_hover" id="header-mini-cart">';
-                echo '<a href="' . get_site_url() . '/cart" title="Go to Cart" style="text-decoration: none"><span class="cart-items-number"><i class="fa fa-fw fa-shopping-cart"></i><span class="wrapper-items-number"><span class="items-number">' . $cart_items . '</span></span></span></a>';
+                echo '<a href="' . get_site_url() . '/lp-cart" title="Go to Cart" style="text-decoration: none"><span class="cart-items-number"><i class="fa fa-fw fa-shopping-cart"></i><span class="wrapper-items-number"><span class="items-number">' . $cart_items . '</span></span></span></a>';
                 echo '<div class="clear"></div>';
                 echo '</div>';
                 if ( $hide_if_empty ) {
