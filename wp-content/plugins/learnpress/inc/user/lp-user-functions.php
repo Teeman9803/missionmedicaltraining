@@ -331,12 +331,16 @@ function learn_press_profile_tab_courses_content( $current, $tab, $user ) {
 	learn_press_get_template( 'profile/tabs/courses.php', array( 'user' => $user, 'current' => $current, 'tab' => $tab ) );
 }
 
-function learn_press_profile_tab_quizzes_content( $current, $tab, $user ) {
+/*function learn_press_profile_tab_quizzes_content( $current, $tab, $user ) {
 	learn_press_get_template( 'profile/tabs/quizzes.php', array( 'user' => $user, 'current' => $current, 'tab' => $tab ) );
-}
+}*/
 
 function learn_press_profile_tab_orders_content( $current, $tab, $user ) {
 	learn_press_get_template( 'profile/tabs/orders.php', array( 'user' => $user, 'current' => $current, 'tab' => $tab ) );
+}
+
+function learn_press_profile_tab_edit_content( $current, $tab, $user ) {
+	learn_press_get_template( 'profile/tabs/edit.php', array( 'user' => $user, 'current' => $current, 'tab' => $tab ) );
 }
 
 function learn_press_after_logged_in() {

@@ -827,11 +827,14 @@ function thim_tab_profile_filter_title( $tab_title, $key ) {
 		case 'courses':
 			$tab_title = '<i class="fa fa-book"></i><span class="text">' . esc_html__( 'Courses', 'eduma' ) . '</span>';
 			break;
-		case 'quizzes':
+/*		case 'quizzes':
 			$tab_title = '<i class="fa fa-check-square-o"></i><span class="text">' . esc_html__( 'Quiz Results', 'eduma' ) . '</span>';
-			break;
+			break;*/
 		case 'orders':
 			$tab_title = '<i class="fa fa-shopping-cart"></i><span class="text">' . esc_html__( 'Orders', 'eduma' ) . '</span>';
+			break;
+		case 'edit':
+			$tab_title = '<i class="fa fa-check-square-o"></i><span class="text">' . esc_html__( 'Account', 'eduma' ) . '</span>';
 			break;
 		case 'wishlist':
 			$tab_title = '<i class="fa fa-heart-o"></i><span class="text">' . esc_html__( 'Wishlist', 'eduma' ) . '</span>';
@@ -842,9 +845,10 @@ function thim_tab_profile_filter_title( $tab_title, $key ) {
 }
 
 add_filter( 'learn_press_profile_courses_tab_title', 'thim_tab_profile_filter_title', 100, 2 );
-add_filter( 'learn_press_profile_quizzes_tab_title', 'thim_tab_profile_filter_title', 100, 2 );
+//add_filter( 'learn_press_profile_quizzes_tab_title', 'thim_tab_profile_filter_title', 100, 2 );
 add_filter( 'learn_press_profile_orders_tab_title', 'thim_tab_profile_filter_title', 100, 2 );
 add_filter( 'learn_press_profile_wishlist_tab_title', 'thim_tab_profile_filter_title', 100, 2 );
+add_filter( 'learn_press_user_profile_tab_edit_title', 'thim_tab_profile_filter_title', 100, 2 );
 
 
 /**
