@@ -833,12 +833,11 @@ function thim_tab_profile_filter_title( $tab_title, $key ) {
 		case 'orders':
 			$tab_title = '<i class="fa fa-shopping-cart"></i><span class="text">' . esc_html__( 'Orders', 'eduma' ) . '</span>';
 			break;
-		case 'edit':
-			$tab_title = '<i class="fa fa-check-square-o"></i><span class="text">' . esc_html__( 'Account', 'eduma' ) . '</span>';
-			break;
 		case 'wishlist':
-			$tab_title = '<i class="fa fa-heart-o"></i><span class="text">' . esc_html__( 'Wishlist', 'eduma' ) . '</span>';
+			$tab_title = '<i class="fa fa-heart"></i><span class="text">' . esc_html__( 'Wishlist', 'eduma' ) . '</span>';
 			break;
+		default:
+			$tab_title = '<i class="fa fa-user"></i><span class="text">' . esc_html__( 'Account', 'eduma' ) . '</span>';
 	}
 
 	return $tab_title;
