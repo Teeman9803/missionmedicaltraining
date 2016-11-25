@@ -1,6 +1,6 @@
 <div class="user-info">
 
-	<div class="author-avatar"><?php echo get_avatar( $user->user->data->ID, 270 ); ?></div>
+	<div id="avatar" class="author-avatar"><?php echo get_avatar( $user->user->data->ID, 270 ); ?></div>
 
 	<div class="user-information">
 
@@ -40,7 +40,7 @@
 		</ul>
 		<h3 class="author-name"><?php echo esc_attr( $user->user->data->display_name ); ?></h3>
 
-		<p><?php echo get_user_meta( $user->user->data->ID, 'description', true ); ?></p>
+		<p id="profile_description"><?php echo get_user_meta( $user->user->data->ID, 'description', true ); ?></p>
 		
 		<?php /*$current_id = get_current_user_id();*/ ?>
 		<?php /*if ( $current_id && $current_id == $user->user->data->ID ) :*/ ?>
@@ -48,3 +48,15 @@
 		<?php /*endif;*/ ?>
 	</div>
 </div>
+<script>
+window.onload = function() {
+   var preview = document.querySelector('#wpua-preview-existing > img');
+   var avatar = document.querySelector('#avatar > img');
+   var author = document.querySelectorAll('.course-author > img');
+   document.getElementById('profile_description').innerHTML = document.getElementById('description').innerHTML;
+   avatar.src = preview.src;
+    author.forEach(function(usr) {
+        usr.src = preview.src;
+    });
+};
+</script>

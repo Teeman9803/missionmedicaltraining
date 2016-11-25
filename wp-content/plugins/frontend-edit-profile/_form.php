@@ -8,7 +8,7 @@ if (!defined('FEP')) {
 }
 ?>
 		<div class="fep">
-			<form id="your-profile" action="#user_edit" method="post"<?php do_action('user_edit_form_tag'); ?>>
+			<form id="your-profile" action="#fep-message" method="post"<?php do_action('user_edit_form_tag'); ?>>
 			<?php wp_nonce_field('update-user_'.$user_id) ?>
 			<?php if ($wp_http_referer) : ?>
 				<input type="hidden" name="wp_http_referer" value="<?php echo esc_url($wp_http_referer); ?>" />
@@ -31,9 +31,12 @@ if (!defined('FEP')) {
 			<h3><?php _e('Name', 'fep') ?></h3>
 
 			<div class="wpcf7 wpcf7-form">
-				<p>
-					<span class="wpcf7-form-control-wrap"><input type="text" name="user_login" id="user_login" value="<?php echo esc_attr($profileuser->user_login); ?>" disabled="disabled" placeholder="Username" class="regular-text" /><br /><em><span class="description"><?php _e('Usernames cannot be changed.', 'fep'); ?></span></em></span>
-				</p>
+            <p>
+            <?php do_shortcode('[avatar_upload]'); ?>
+            </p>
+            <p>
+                <span class="wpcf7-form-control-wrap"><input type="text" name="user_login" id="user_login" value="<?php echo esc_attr($profileuser->user_login); ?>" disabled="disabled" placeholder="Username" class="regular-text" /><br /><em><span class="description"><?php _e('Usernames cannot be changed.', 'fep'); ?></span></em></span>
+            </p>
 			<p>
 				<span class="wpcf7-form-control-wrap"><input type="text" name="first_name" id="first_name" value="<?php echo esc_attr($profileuser->first_name) ?>" placeholder="First Name" class="regular-text" /></span>
 			</p>
@@ -47,7 +50,7 @@ if (!defined('FEP')) {
 			</p>
 
 			<p>
-				<h3><label for="display_name"><?php _e('Display to Public as', 'fep') ?></label></h3>
+				<label style="font-weight:normal" for="display_name"><h3><?php _e('Display to Public as', 'fep') ?></h3></label>
 				<span class="wpcf7-form-control-wrap">
 					<select name="display_name" id="display_name">
 					<?php
