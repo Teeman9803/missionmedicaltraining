@@ -1,0 +1,1 @@
+<?php echo do_shortcode("[PROFILE_FORM]"); ?>

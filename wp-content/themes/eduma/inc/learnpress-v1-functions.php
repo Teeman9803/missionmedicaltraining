@@ -921,8 +921,10 @@ if ( !function_exists( 'thim_extra_user_profile_fields' ) ) {
 	function thim_extra_user_profile_fields( $user ) {
 		$user_info = get_the_author_meta( 'lp_info', $user->ID );
 		?>
-		<h3><?php esc_html_e( 'LearnPress Profile', 'eduma' ); ?></h3>
 
+		<h3><?php esc_html_e( 'Social', 'eduma' ); ?></h3>
+
+		<?php if(is_admin()) { ?>
 		<table class="form-table">
 			<tbody>
 			<tr>
@@ -975,6 +977,29 @@ if ( !function_exists( 'thim_extra_user_profile_fields' ) ) {
 			</tr>
 			</tbody>
 		</table>
+		<?php } else { ?>
+			<div class="wpcf7-form">
+        				<p>
+        					<span><input id="lp_major" class="regular-text" type="text" placeholder="Major" value="<?php echo isset( $user_info['major'] ) ? $user_info['major'] : ''; ?>" name="lp_info[major]"></span>
+        				</p>
+        				<p>
+        					<span><input id="lp_facebook" class="regular-text" type="text" placeholder="Facebook" value="<?php echo isset( $user_info['facebook'] ) ? $user_info['facebook'] : ''; ?>" name="lp_info[facebook]"></span>
+        				</p>
+        				<p>
+        					<span><input id="lp_twitter" class="regular-text" type="text" placeholder="Twitter" value="<?php echo isset( $user_info['twitter'] ) ? $user_info['twitter'] : ''; ?>" name="lp_info[twitter]"></span>
+        				</p>
+        				<p>
+        					<span><input id="lp_google" class="regular-text" type="text" placeholder="Google" value="<?php echo isset( $user_info['google'] ) ? $user_info['google'] : ''; ?>" name="lp_info[google]"></span>
+        				</p>
+        				<p>
+        					<span><input id="lp_linkedin" class="regular-text" type="text" placeholder="LinkedIn" value="<?php echo isset( $user_info['linkedin'] ) ? $user_info['linkedin'] : ''; ?>" name="lp_info[linkedin]"></span>
+        				</p>
+        				<p>
+        					<span><input id="lp_youtube" class="regular-text" type="text" placeholder="YouTube" value="<?php echo isset( $user_info['youtube'] ) ? $user_info['youtube'] : ''; ?>" name="lp_info[youtube]"></span>
+        				</p>
+        		</div>
+
+		<?php } ?>
 		<?php
 	}
 }
