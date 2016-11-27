@@ -62,6 +62,12 @@ class LP_Session {
 			$_SESSION['learn_press'] = array();
 		}
 
+    if( empty( $_SESSION['learn_press_cart'] ) ){
+            $_SESSION['learn_press_cart'] = array(
+                'cart_id'   =>  md5( time() )
+            );
+        }
+
 		do_action( 'learn_press_session_init' );
 
 		return $_SESSION['learn_press'];
@@ -128,6 +134,10 @@ class LP_Session {
 		}
 		return self::$instance;
 	}
+
+	public static function destroy(){
+         unset( $_SESSION['learn_press_cart'] );
+    }
 }
 
 LP_Session::init();
